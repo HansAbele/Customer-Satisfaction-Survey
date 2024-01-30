@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Customer</h1>
+    <h2 id="subtitle">Satisfaction Survey</h2>
+    <p id="description">Your valuable feedback helps us understand your needs and improve our services.</p>
+        <form id="survey-form">
+            <label id="name-label"> Name
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </label>
+            <label id="number-label"> Age (opctional)
+                <input type="number" placeholder="Age">
+            </label>
+             <label for="phone"> Phone Number
+                <input id="number" type="number" placeholder="Enter your phone number" id="phone" name="phone"  min="0" max="100" required>
+            </label>
+             <label id="email-label"> Email
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </label>
+            <label> How would you rate your overall satisfaction with our product?
+                <select id="dropdown" name="role">
+                    <option>Select an option</option>
+                    <option>Very Satisfied</option>
+                    <option>Satisfied</option>
+                    <option>Neutral</option>
+                    <option>Dissatisfied</option>
+                    <option>Very Dissatisfied</option>
+                </select>
+            </label>
+  <legend>How likely are you to recomend our product to a friend?</legend> 
+  <div>
+    <label for="very-likely"><input type="radio" id="very-likely" name="recomend" value="very-likely" class="inline" checked />Very Likely</label>
+  </div>
+  <div>
+    <label for="likely"><input type="radio" id="likely" name="recomend" value="likely" class="inline" checked />Likely</label>
+  </div>
+  <div>
+    <label for="neutral"><input type="radio" id="neutral" name="recomend" value="neutral" class="inline" checked />Neutral</label>
+  </div>
+  <div>
+    <label for="unlikely"><input type="radio" id="unlikely" name="recomend" value="unlikely" class="inline" checked />Unlikely</label>
+  </div>
+    <label for="very-unlikely"><input type="radio" id="very-unlikely" name="recomend" value="very-unlikely" class="inline" checked />Very Unlikely</label>
+  </div>
+  <label>How was your experience wih our customer service team?
+                <select name="service">
+                    <option>Select an option</option>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Poor</option>
+                    <option>Very Poor</option>
+                </select>
+            </label>
+            <legend>How did you hear about our product/service?</legend> 
+  <div>
+    <label for="media"><input type="checkbox" id="media" value="media" class="inline"/>Social Media</label>
+  </div>
+  <div>
+    <label for="search"><input type="checkbox" id="search" value="search" class="inline"/>Search Engine</label>
+  </div>
+  <div>
+    <label for="advertisement"><input type="checkbox" id="advertisement" value="advertisement" class="inline"/>Advertisement</label>
+  </div>
+  <div>
+  <label for="mouth"><input type="checkbox" id="mouth" value="mouth" class="inline"/>Word of Mouth</label>
+  </div>
+  <div>
+  <label for="other"><input type="checkbox" id="other" value="other" class="inline"/>Other</label>
+  </div>
+  <div>
+     <label for="suggestion">Any comments or suggestions?
+          <textarea id="suggestion" name="suggestion" rows="8" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+  </div>
+         <input type="submit" value="Submit" id="submit" />
+        </form>
+</body>
+</html>
